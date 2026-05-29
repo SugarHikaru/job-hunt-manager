@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>企業一覧</title>
+  </head>
+  <body>
+    <h1>企業一覧</h1>
+
+    <a href="/companies/new">
+      <p>新規企業登録</p>
+    </a>
+
+    <h2>検索・絞り込み</h2>
+
+    <form>
+      <div>
+        <label>企業名</label>
+        <input type="text" name="companyName" />
+      </div>
+
+      <div>
+        <label>選考状況</label>
+        <select name="status">
+          <option value="">選択してください</option>
+          <option value="es">ES提出済</option>
+          <option value="interview">面接予定</option>
+          <option value="offer">内定</option>
+        </select>
+      </div>
+      <div>
+        <label>志望度</label>
+        <select name="priority">
+          <option value="">選択してください</option>
+          <option value="high">高</option>
+          <option value="middle">中</option>
+          <option value="low">低</option>
+        </select>
+      </div>
+
+      <button type="submit">検索</button>
+    </form>
+
+    <h2>登録企業一覧</h2>
+
+    <table border="1">
+      <tr>
+        <th>企業名</th>
+        <th>業界</th>
+        <th>選考状況</th>
+        <th>ES締切日</th>
+        <th>面接日程</th>
+        <th>志望度</th>
+        <th>詳細</th>
+      </tr>
+
+      <tr>
+        <td>Google</td>
+        <td>IT</td>
+        <td>ES提出済</td>
+        <td>2026-06-01</td>
+        <td>2026-06-10</td>
+        <td>高</td>
+        <td>
+          <a href="/companies/1">詳細</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>NTTデータ</td>
+        <td>SIer</td>
+        <td>面接予定</td>
+        <td>2026-06-05</td>
+        <td>2026-06-15</td>
+        <td>中</td>
+        <td>
+          <a href="/companies/2">詳細</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
