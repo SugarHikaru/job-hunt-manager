@@ -10,4 +10,9 @@ public class CompanyController {
   public String showCompanyList() {
     return "company-list";
   }
+
+  @GetMapping("/companies/new")
+  public String showCompanyForm() {
+    return "company-form";
+  }
 }
